@@ -1,0 +1,21 @@
+{
+  "name": "pi-notify-on-finish",
+  "version": "0.1.0",
+  "description": "Pi package that sends compact completion notifications for top-level runs.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "notification",
+    "desktop-notification"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./extensions/notify-on-finish.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
