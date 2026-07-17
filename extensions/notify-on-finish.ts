@@ -113,7 +113,7 @@ function classifyState(message?: AssistantMessageLike): string | undefined {
   if (!message) return "done";
   if (message.stopReason === "toolUse") return undefined;
   if (message.stopReason === "error") return "error";
-  if (message.stopReason === "aborted") return "aborted";
+  if (message.stopReason === "aborted") return undefined;
   if (message.stopReason === "length") return "truncated";
   if (message.stopReason && message.stopReason !== "stop") return undefined;
 

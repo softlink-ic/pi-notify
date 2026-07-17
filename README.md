@@ -4,11 +4,10 @@ Notifies when a pi agent has finished executing, including the conversation topi
 - `responded`
 - `wants input`
 - `error`
-- `aborted`
 - `truncated`
 - `done`
 
-Skips notifications for subagent child runs and incomplete `toolUse` states.
+Skips notifications for subagent child runs, aborted runs, and incomplete `toolUse` states.
 
 ## Install
 
